@@ -7,7 +7,7 @@
     - master
 
     install:
-    - pip install pytest 
+    - pip install pytest numpy networkx
 
     script:
     - pytest --verbose 
