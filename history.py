@@ -1,6 +1,6 @@
 import numpy as np
 from copy import deepcopy
-import new_state_print
+import new_states
 import sir
 
 def historico(estados_iniciais, grafo, doenca, k):

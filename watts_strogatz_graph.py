@@ -5,7 +5,7 @@ import random
 import networkx as nx
 import numpy as np
 
-def grafowatts_strogatz(n, k, , p = 0.5, seed=None):
+def grafowatts_strogatz(n, k, p = 0.5, seed=None):
 	"""Retorna uma matriz de adjacencia de do tipo small-world 
 	de acordo com o modelo de Watts e Strogatz G{n,m}.
 
@@ -21,7 +21,7 @@ def grafowatts_strogatz(n, k, , p = 0.5, seed=None):
 	Caso a semente seja nula,ie, None:
 	random.seed(seed) 
 	"""
-		G = nx.to_numpy_matrix(nx.watts_strogatz_graph(n,k,p))	
+	G = nx.to_numpy_matrix(nx.watts_strogatz_graph(n,k,p))	
 	
 	
 	return G
