@@ -21,11 +21,11 @@ def historico(estados_iniciais, grafo, doenca, k):
 	i = 0
 	estados = deepcopy(estados_iniciais)
 	count = sir.sir(estados_iniciais)
-	estados = new_state_print.passo_epidemico(estados_iniciais, grafo, doenca,k)
+	estados = new_states.passo_epidemico(estados_iniciais, grafo, doenca,k)
 	while (count.item(1) > 0):
 		i = i+1
 		L.append(count.transpose().tolist())
-		estados = new_state_print.passo_epidemico(estados, grafo, doenca,k)
+		estados = new_states.passo_epidemico(estados, grafo, doenca,k)
 		count = sir.sir(estados)
 	
 	L.append(count.transpose().tolist())
